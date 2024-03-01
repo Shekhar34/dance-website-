@@ -1,0 +1,40 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Dance Website
+    link(rel="stylesheet", href="../static/stylecontact.css")
+  body
+    header
+      h1 Welcome to Our Dance Website
+      nav.navbar
+        ul.navbar-links
+          li
+            a(href="#") Home
+          li
+            a(href="#") About
+          li
+            a(href="#") Classes
+          li
+            a(href="#") Events
+          li
+            a(href="/contact") Contact
+    header
+      h1 Contact Us
+    main.contact-form
+      form(action="/contact", method="POST")
+        label(for="name") Name:
+        input(type="text", id="name", name="name", required)
+        label(for="email") Email:
+        input(type="email", id="email", name="email", required)
+        label(for="message") Message:
+        textarea(id="message", name="message", rows="4", required)
+        button(type="submit") Send Message
+
+   
+    footer
+      p © 2024 Dance Studio. All rights reserved.
+
+    script
+      include ../static/index.js

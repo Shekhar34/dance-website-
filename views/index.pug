@@ -1,0 +1,56 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Dance Website
+    link(rel="stylesheet", href="../static/style.css")
+  body
+    header
+      h1 Welcome to Our Dance Website
+      nav.navbar
+        ul.navbar-links
+          li
+            a(href="/") Home
+          li
+            a(href="/") About
+          li
+            a(href="/") Classes
+          li
+            a(href="/") Events
+          li
+            a(href="/contact") Contact
+    section.about
+      h2 About Us
+      p
+        | We are passionate about dance and dedicated to sharing our love of movement with others. 
+        | Our studio offers a variety of classes for all ages and skill levels.
+    section.classes
+      h2 Classes
+      .class-card
+        h3 Ballet
+        p
+          | Learn the fundamentals of ballet technique in a supportive and encouraging environment. 
+          | Classes available for children and adults.
+      .class-card
+        h3 Hip Hop
+        p
+          | Get moving and grooving with our high-energy hip hop classes! 
+          | Suitable for all levels, no experience required.
+    section.events
+      h2 Upcoming Events
+      .event-card
+        h3 Dance Showcase
+        p Join us for an evening of performances featuring our talented students and instructors.
+        p Date: March 15th, 2024
+        p Time: 7:00 PM
+      .event-card
+        h3 Open House
+        p Explore our studio, meet the instructors, and try a free mini-class!
+        p Date: April 5th, 2024
+        p Time: 10:00 AM - 2:00 PM
+    footer
+      p © 2024 Dance Studio. All rights reserved.
+
+    script
+      include ../static/index.js
